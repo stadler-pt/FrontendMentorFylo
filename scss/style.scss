@@ -1,0 +1,300 @@
+$heading: hsl(243, 87%, 12%);
+$button: rgb(40, 100, 240);
+$subColor: hsl(238, 22%, 44%);
+$fontHeading: 'Raleway', sans-serif;
+$fontBody: 'Open Sans', sans-serif;
+
+* {
+    box-sizing: content-box;
+    margin: 0px;
+}
+
+body {width: 100vw; margin: 0px; padding: 0px; overflow-x: hidden;}
+
+header { 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 10vh;
+        img {
+            margin-left: 5vw;
+            width: 15vw;
+            max-width: 150px;
+            min-width: 100px;    
+        }
+        nav {margin-right: 2vw;
+            a {
+                margin-right: 2vw;
+                text-decoration: none;
+                color: $heading;
+                font-family: $fontHeading;
+                font-size: calc(10px + 1vw);
+            }
+            a:hover {
+                color: $subColor;
+            }
+        }
+    }
+}
+
+.section1 {
+    height: 90vh;
+    background-image: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size:contain;
+    .container1 {
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        padding-bottom: 10vh;
+        margin-left: 5vw;
+        div.image {
+            background-image: url(images/illustration-1.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 65%;
+            width: 50%;
+            max-width: 800px;
+            min-width: 300px;
+            margin-bottom: 7vh;
+        }
+        div.content{
+            width: 50%;
+            max-width: 900px;
+            min-width: 300px;
+            margin-top: -15vh;
+            font-family: $fontBody;
+            h1 {font-family: $fontHeading; font-size:calc(10px + 2vw);}
+            p {margin: 20px 0px; font-size:calc(10px + 1vw);}
+            form {
+                input{font-family: $fontBody; border-radius: 5px; padding: 0.9em}
+                input[type="email"] {
+                    width: 50%;
+                    border: 1px solid darkgray;
+                    margin-right: 1em;
+                }
+                input[type="submit"] {
+                    width: 30%;
+                    background-color: $button;
+                    color: white;
+                    font-weight: 500;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.section2 {
+    background-color: rgb(248, 248, 254);
+    min-height: 90vh; 
+    width: 100vw;
+    .container3 {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        font-family: $fontBody;
+        font-size: calc(10px + 1vw);
+        margin-left: 5vw;
+        .left {
+            max-width: 900px;
+            min-width: 300px;
+            flex-basis: 50%;
+            h1 {font-family: $fontHeading; font-size: calc(20px + 1.5vw); margin-bottom: 2rem;}
+            p {font-size:calc(10px + 1vw); width: 80%;}
+            a {
+                text-decoration: underline;
+                color: green;
+                font-family: $fontHeading;
+                display: inline-block;
+                margin: 20px 0px;
+                margin-bottom: 50px;
+            }
+            a:hover {
+                color: $subColor;
+            }
+            aside {
+                width: 50%;
+                background-color: white;
+                border-radius: 5px;
+                box-shadow: lightgrey 0px 0px 10px;
+                display: flex;
+                flex-flow: column;
+                padding: 30px;
+                p {font-size: calc(7px + 0.5vw);}
+                .top {margin-bottom: 20px; width: 20px;}
+                .portrait {border-radius: 50%; margin-right: 10px; width: 15%;}
+                .testemonial {display: flex; margin-top: 20px; font-size: calc(7px + 0.5vw);}
+                .textTestemonial {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+        }
+        .image2 {
+            background-image: url(images/illustration-2.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            height: 65vh;
+            width: 50%;
+            max-width: 900px;
+            min-width: 300px;
+            margin-bottom: 5vh;
+        }
+    }
+}
+
+.section3 {
+    width: 100vw;
+    background-color: $subColor;
+    color: white;
+    padding: 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .sec3Text {
+        width: 25%;
+        max-width: 900px;
+        min-width: 300px;
+        h1 {font-family: $fontHeading; margin-bottom: 20px;}
+        p {font-family: $fontBody; }
+    }
+    form {
+        width: 40%;
+        max-width: 900px;
+        min-width: 300px;
+        input{
+            font-family: $fontBody;
+            border-radius: 5px;
+            padding: 0.9em;
+            box-shadow: darkslategrey 5px 5px 7px;
+        }
+        input[type="email"] {
+            width: 70%;
+            border: 0.5px solid darkgray;
+        }
+        input[type="submit"] {
+            width: 30%;
+            background-color: $button;
+            color: white;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+    }
+}
+
+.footer {
+    background-color: $heading;
+    color: white;
+    padding: 5vw;
+    .whiteLogo {filter: brightness(0) invert(1); margin-bottom: 30px;}
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-family: $fontBody;
+        div a {
+            display: block;
+            margin-bottom: 0.7em;
+            color: white;
+            text-decoration: none;   
+        }
+        div a:hover {
+            color: $subColor;
+        }
+        span {
+            display: block;
+            margin-bottom: 0.7em;
+            img {margin-right: 1em;}
+        }
+        .social {
+            display: flex;
+            .fa {
+                padding: 5px;
+                font-size: 15px;
+                width: 15px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+                border: 1px solid white;
+                margin-left: 20px;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1056px) {
+    header {margin-bottom: 15vh;}
+    .section1 {
+        text-align: center;
+        .container1 {
+            margin-left: 0px;
+            div.content form {
+            margin-top: 40px;
+            margin-bottom: 10vh;
+            text-align: center;
+            input[type="email"] {width: 90%; margin: 0px; margin-bottom: 1vh;}
+            input[type="submit"] {width: 90%;}
+            }
+        }
+    }
+    .section2 {
+        .container3 {
+            align-items: center;
+            margin-left: 0px;
+            .left {
+                justify-items: center;
+                padding: 0px;
+                h1 {text-align: center;}
+                p{width: 100%;}
+                a {width: 100%; text-align: center;}
+                aside {width: 70%; margin: auto; margin-bottom: 10vh;}
+            }
+            .image2 {margin-bottom: 0vh;}
+        }
+    }
+    .section3 {
+        width: 100%;
+        justify-content: center;
+        padding: 0px;
+        padding-top: 40px;
+        .sec3Text {text-align: center; 
+            p {width: 100%;}
+        }
+        form {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 10vh;
+            input[type="email"] {width: 80%;}
+            input[type="submit"] {width: 80%;}
+        }
+    }
+    .footer {
+        .whiteLogo {margin-bottom: 0px;}
+        div {margin-top: 20px;}
+        .container {
+            flex-direction: column;
+            .social {
+                margin: auto;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    
+}

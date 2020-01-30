@@ -1,0 +1,461 @@
+* {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0px;
+}
+
+body {
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 10vh;
+}
+
+header .container img {
+  margin-left: 5vw;
+  width: 15vw;
+  max-width: 150px;
+  min-width: 100px;
+}
+
+header .container nav {
+  margin-right: 2vw;
+}
+
+header .container nav a {
+  margin-right: 2vw;
+  text-decoration: none;
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-size: calc(10px + 1vw);
+}
+
+header .container nav a:hover {
+  color: #585989;
+}
+
+.section1 {
+  height: 90vh;
+  background-image: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.section1 .container1 {
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  padding-bottom: 10vh;
+  margin-left: 5vw;
+}
+
+.section1 .container1 div.image {
+  background-image: url(images/illustration-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 65%;
+  width: 50%;
+  max-width: 800px;
+  min-width: 300px;
+  margin-bottom: 7vh;
+}
+
+.section1 .container1 div.content {
+  width: 50%;
+  max-width: 900px;
+  min-width: 300px;
+  margin-top: -15vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.section1 .container1 div.content h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: calc(10px + 2vw);
+}
+
+.section1 .container1 div.content p {
+  margin: 20px 0px;
+  font-size: calc(10px + 1vw);
+}
+
+.section1 .container1 div.content form input {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  padding: 0.9em;
+}
+
+.section1 .container1 div.content form input[type="email"] {
+  width: 50%;
+  border: 1px solid darkgray;
+  margin-right: 1em;
+}
+
+.section1 .container1 div.content form input[type="submit"] {
+  width: 30%;
+  background-color: #2864f0;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.section2 {
+  background-color: #f8f8fe;
+  min-height: 90vh;
+  width: 100vw;
+}
+
+.section2 .container3 {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: calc(10px + 1vw);
+  margin-left: 5vw;
+}
+
+.section2 .container3 .left {
+  max-width: 900px;
+  min-width: 300px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.section2 .container3 .left h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: calc(20px + 1.5vw);
+  margin-bottom: 2rem;
+}
+
+.section2 .container3 .left p {
+  font-size: calc(10px + 1vw);
+  width: 80%;
+}
+
+.section2 .container3 .left a {
+  text-decoration: underline;
+  color: green;
+  font-family: "Raleway", sans-serif;
+  display: inline-block;
+  margin: 20px 0px;
+  margin-bottom: 50px;
+}
+
+.section2 .container3 .left a:hover {
+  color: #585989;
+}
+
+.section2 .container3 .left aside {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: lightgrey 0px 0px 10px;
+          box-shadow: lightgrey 0px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 30px;
+}
+
+.section2 .container3 .left aside p {
+  font-size: calc(7px + 0.5vw);
+}
+
+.section2 .container3 .left aside .top {
+  margin-bottom: 20px;
+  width: 20px;
+}
+
+.section2 .container3 .left aside .portrait {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 15%;
+}
+
+.section2 .container3 .left aside .testemonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-size: calc(7px + 0.5vw);
+}
+
+.section2 .container3 .left aside .textTestemonial {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section2 .container3 .image2 {
+  background-image: url(images/illustration-2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 65vh;
+  width: 50%;
+  max-width: 900px;
+  min-width: 300px;
+  margin-bottom: 5vh;
+}
+
+.section3 {
+  width: 100vw;
+  background-color: #585989;
+  color: white;
+  padding: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section3 .sec3Text {
+  width: 25%;
+  max-width: 900px;
+  min-width: 300px;
+}
+
+.section3 .sec3Text h1 {
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.section3 .sec3Text p {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section3 form {
+  width: 40%;
+  max-width: 900px;
+  min-width: 300px;
+}
+
+.section3 form input {
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  padding: 0.9em;
+  -webkit-box-shadow: darkslategrey 5px 5px 7px;
+          box-shadow: darkslategrey 5px 5px 7px;
+}
+
+.section3 form input[type="email"] {
+  width: 70%;
+  border: 0.5px solid darkgray;
+}
+
+.section3 form input[type="submit"] {
+  width: 30%;
+  background-color: #2864f0;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.footer {
+  background-color: #070439;
+  color: white;
+  padding: 5vw;
+}
+
+.footer .whiteLogo {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin-bottom: 30px;
+}
+
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer .container div a {
+  display: block;
+  margin-bottom: 0.7em;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .container div a:hover {
+  color: #585989;
+}
+
+.footer .container span {
+  display: block;
+  margin-bottom: 0.7em;
+}
+
+.footer .container span img {
+  margin-right: 1em;
+}
+
+.footer .container .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .container .social .fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-left: 20px;
+}
+
+@media (max-width: 1056px) {
+  header {
+    margin-bottom: 15vh;
+  }
+  .section1 {
+    text-align: center;
+  }
+  .section1 .container1 {
+    margin-left: 0px;
+  }
+  .section1 .container1 div.content form {
+    margin-top: 40px;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  .section1 .container1 div.content form input[type="email"] {
+    width: 90%;
+    margin: 0px;
+    margin-bottom: 1vh;
+  }
+  .section1 .container1 div.content form input[type="submit"] {
+    width: 90%;
+  }
+  .section2 .container3 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0px;
+  }
+  .section2 .container3 .left {
+    justify-items: center;
+    padding: 0px;
+  }
+  .section2 .container3 .left h1 {
+    text-align: center;
+  }
+  .section2 .container3 .left p {
+    width: 100%;
+  }
+  .section2 .container3 .left a {
+    width: 100%;
+    text-align: center;
+  }
+  .section2 .container3 .left aside {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10vh;
+  }
+  .section2 .container3 .image2 {
+    margin-bottom: 0vh;
+  }
+  .section3 {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0px;
+    padding-top: 40px;
+  }
+  .section3 .sec3Text {
+    text-align: center;
+  }
+  .section3 .sec3Text p {
+    width: 100%;
+  }
+  .section3 form {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10vh;
+  }
+  .section3 form input[type="email"] {
+    width: 80%;
+  }
+  .section3 form input[type="submit"] {
+    width: 80%;
+  }
+  .footer .whiteLogo {
+    margin-bottom: 0px;
+  }
+  .footer div {
+    margin-top: 20px;
+  }
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .container .social {
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
